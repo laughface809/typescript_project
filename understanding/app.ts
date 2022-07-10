@@ -1,13 +1,14 @@
-const person: {
-    name: string;
-    age: number;
-    hobbies: string[];
-    role: [number, string];
-} = {
+// const ADMIN = 0;
+// const READ_ONLY = 1;
+// const AUTHOR = 2;
+
+enum Role { ADMIN, READ_ONLY, AUTHOR};
+
+const person = {
     name: 'laughface809',
     age: 30,
     hobbies: ['sports', 'cooking'],
-    role: [2, 'author']
+    role: Role.ADMIN
 };
 
 // person.role.push('admin');
@@ -23,4 +24,8 @@ console.log(person.name);
 for (const hobby of person.hobbies){
     console.log(hobby.toUpperCase());
     // console.log(hobby.map()) !!Error !!
+}
+
+if(person.role === Role.ADMIN){
+    console.log('is author')
 }
