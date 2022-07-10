@@ -1,8 +1,7 @@
-function sendRequest(data, cb) {
-    // ... sending a request with "data"
-    return cb({ data: 'Hi there!' });
+var userInput;
+var userName;
+userInput = 5;
+userInput = 'Lauhgface';
+if (typeof userInput === 'string') {
+    userName = userInput;
 }
-sendRequest('Send this!', function (response) {
-    console.log(response);
-    return true;
-});
