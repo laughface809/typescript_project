@@ -1,11 +1,12 @@
 var userInput;
 var userName;
 userInput = 5;
-userInput = 'Lauhgface';
+userInput = 'Max';
 if (typeof userInput === 'string') {
     userName = userInput;
 }
 function generateError(message, code) {
     throw { message: message, errorCode: code };
+    // while (true) {}
 }
-generateError('An Error occured!', 500);
+generateError('An error occurred!', 500);
